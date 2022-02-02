@@ -1,0 +1,19 @@
+.service-text {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    width: 37.8vw;
+    text-align: end;
+    justify-self: end;
+    align-content: center;
+}
+
+.service-text__title {
+    color: #c04ae2;
+    font-family: 'OverpassExtraBold';
+    font-size: 2vh;
+}
+
+.service-text__subtitle {
+    font-family: 'OverpassExtraBold';
+    font-size: 5vh;
+}

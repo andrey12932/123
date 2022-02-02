@@ -1,0 +1,14 @@
+@import url(head.css);
+@import url(start.css);
+@import url(colors.css);
+@import url(services.css);
+@import url(customers.css);
+@import url(team.css);
+@import url(contact.css);
+@import url(footer.css);
+@import url(fontawesome-free-5.15.4-web/css/fontawesome.min.css);
+@import url(fontawesome-free-5.15.4-web/css/all.min.css);
+
+body {
+    min-width: 1440px;
+}

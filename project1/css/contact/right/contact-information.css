@@ -1,0 +1,38 @@
+.contact-main-right-contacts {
+    display: grid;
+    grid-template-columns: 2.9vw auto;
+    column-gap: 1vh;
+}
+
+.contact-main-right-information {
+    display: grid;
+    grid-template-rows: repeat(2, 1.7vh);
+    row-gap: 0.5vh;
+}
+
+.contact-main-right-information__title {
+    font-family: 'OverpassExtraBold';
+}
+
+.contact-main-right-information__data {
+    font-family: 'RobotoRegular';
+}
+
+.contact-main-right-contacts-image-container > i {
+    color: white;
+    position: relative;
+    top: -36px;
+    left: 16px;
+}
+
+.fa-map-marker-alt {
+    
+    left: 18px !important;
+
+}
+
+@media (max-width: 1000px) {
+    .contact-main-right-contacts {
+        column-gap: 4vh;
+    }
+}

@@ -1,0 +1,28 @@
+@import url(quote-block/quote-block-container.css);
+@import url(quote-image.css);
+
+.quote {
+    display: grid;
+    grid-template-columns: 36.5vw 39.9vw;
+    grid-template-rows: 19.4vh 100vh;
+    justify-content: center;
+}
+
+.image {
+    display: grid;
+    background-image: url(../../../img/team/ing-bg.png);
+    background-size: 100%;
+    justify-content: center;
+    grid-column: 2/3;
+    height: 66.9vh;
+}
+
+.quote-image {
+    width: 24.5vw;
+}
+
+@media (max-width: 1500px) {
+    .quote {
+        grid-template-rows: 4vh 100vh;
+    }
+}

@@ -1,0 +1,86 @@
+@import url(../css/fonts.css);
+
+.team {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    font-family: 'RalewayRegular';
+    text-align: center;
+    height: 765px;
+    line-height: 30px;
+}
+
+.team-container {
+    display: grid;
+    grid-template-rows: auto 50px repeat(3, auto);
+    grid-column: 2/3;
+    max-width: 660px;
+    padding-right: 10px;
+    padding-left: 10px;
+    justify-self: center;
+}
+
+.team-title {
+    font-size: 45px;
+    align-self: flex-end;
+    margin-bottom: 30px;
+}
+
+.team-subtitle {
+    font-size: 15px;
+    line-height: 25px;
+    color: #b0bec5;
+}
+
+.team-pictures {
+    margin-top: 33px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    column-gap: 30px;
+}
+
+.team-pictures__img {
+    align-self: center;
+    justify-self: center;
+    z-index: 2;
+}
+.team-pictures__img1 {
+    align-self: center;
+    position: relative;
+    left: 27%;
+    z-index: 2;
+}
+.team-pictures__el {
+    justify-self: center;
+    position: relative;
+    align-self: center;
+    top: 10%;
+    left: -23%;
+    z-index: 3;
+}
+
+.team-text {
+    display: grid;
+    grid-template-rows: 18px auto;
+    row-gap: 22px;
+}
+
+.team-text__name {
+    font-size: 18px;
+    font-family: 'RalewaySemiBold';
+}
+
+.team-text__text {
+    color: #90a4ae;
+    line-height: 25px;
+}
+
+.team-icons {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    color: #90a4ae;
+    width: 200px;
+    justify-self: center;
+    justify-content: space-between;
+    font-size: 17px;
+}

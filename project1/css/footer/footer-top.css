@@ -1,0 +1,90 @@
+.footer-top {
+    display: grid;
+    grid-template-columns: 19.3vw 4.4vw 5.7vw 13.3vw;
+    width: 60.4vw;
+    justify-content: space-between;
+}
+
+.footer-top-col {
+    display: grid;
+    grid-template-rows: 3.3vh auto;
+    row-gap: 2vh;
+}
+
+.footer-top-col > span {
+    font-family: 'OverpassExtraBold';
+    font-size: 2.2vh;
+}
+
+.footer-top-col-list {
+    display: grid;
+    grid-template-rows: repeat(5, 2.2vh);
+    font-family: 'RobotoRegular';
+    font-size: 1.7vh;
+    row-gap: 0.4vh;
+}
+
+@media (max-width: 1000px) {
+    .footer-top {
+        grid-template-columns: 19.3vw 7.4vw 5.7vw 13.3vw;
+    }
+}
+
+.footer-top-col-list > a {
+    color: #696363;
+    text-decoration: none;
+}
+
+.footer-top-col-list-items {
+    font-family: 'RobotoRegular';
+    color: #696363;
+    text-decoration: none;
+    font-size: 1.7vh;
+}
+
+.footer-top-col > img {
+    height: 3.3vh;
+    align-self: center;
+}
+
+.footer-top-col__text {
+    font-family: 'RobotoRegular' !important;
+    font-size: 1.7vh !important;
+    color: #696363;
+    text-decoration: none;
+}
+
+.footer-top-col-item {
+    display: grid;
+    grid-template-columns: 2.1vw 12vw;
+}
+
+.footer-top-col-item > i {
+    color: black;
+}
+
+.footer-top-col-list-items {
+    display: grid;
+    grid-template-rows: 4vh 1.9vh 1.9vh;
+    row-gap: 2.2vh;
+}
+
+.footer-top-col-form > input {
+    border: none;
+    border-radius: 7px;
+    background-color: rgb(243, 249, 251);
+    width: 19.3vw;
+    height: 6.1vh;
+    padding-left: 0.9vw;
+    font-family: 'RobotoRegular';
+    font-size: 1.7vh;
+}
+
+.footer-top-col-form > i {
+    color: #666666;
+    font-size: 2.4vh;
+    left: 50px;
+    position: relative;
+    left: 17.7vw;
+    top: -4.5vh;
+}

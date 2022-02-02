@@ -1,0 +1,13 @@
+.portfolio-footer > a {
+    font-family: 'OverpassExtraBold';
+    font-size: 1.7vh;
+    padding-bottom: 0.5vh;
+    text-decoration: none;
+    border-bottom: solid 2px #c04ae2;
+    color: black;
+    text-align: center;
+}
+
+.portfolio-footer {
+    text-align: center;
+}

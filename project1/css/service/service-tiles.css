@@ -1,0 +1,36 @@
+.service-tile-col-item {
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+    row-gap: 3.4vh;
+    width: 19.4vw;
+    height: 44vh;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 25px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 24px 72px 0px rgba(7, 28, 75, 0.07);
+}
+
+.service-tile-col-item > img {
+    justify-self: center;
+}
+
+.service-tile-col-item > span {
+    width: 15.1vw;
+}
+
+.service-tile-col-item__title {
+    font-size: 2.3vh;
+    font-family: 'OverpassExtraBold';
+}
+
+.service-tile-col-item__text {
+    font-family: 'RobotoRegular';
+    font-size: 1.5vh;
+    color: #5e5858;
+}
+
+.service-tile-col-item__arrow {
+    cursor: pointer;
+}

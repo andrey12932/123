@@ -1,0 +1,26 @@
+@import url(team-blocks/team-main-block.css);
+
+.team-main {
+    display: grid;
+    grid-template-columns: auto repeat(4, 14.3vw) auto;
+    width: 71vw;
+    height: 45.8vh;
+    justify-self: center;
+    justify-content: space-between;
+}
+
+.team-main img:nth-child(6) {
+    align-self: end;
+}
+
+@media (max-width: 1500px) {
+    .team-main {
+        width: 90vw;
+    }
+}
+
+@media (max-width: 1000px) {
+    .team-main {
+        width: 120vw;
+    }
+}

@@ -1,0 +1,19 @@
+.portfolio-header {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    text-align: center;
+    max-height: 18.5vh;
+    max-width: 39.1vw;
+    justify-self: center;
+}
+
+.portfolio-header__title {
+    font-family: 'OverpassExtraBold';
+    color: #c04ae2;
+    font-size: 1.9vh;
+}
+
+.portfolio-header__subtitle {
+    font-family: 'OverpassExtraBold';
+    font-size: 4.5vh;
+}

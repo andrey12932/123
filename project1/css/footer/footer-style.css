@@ -1,0 +1,11 @@
+@import url(footer-bot.css);
+@import url(footer-top.css);
+
+footer {
+    display: grid;
+    grid-template-rows: 23.1vh 2vh;
+    height: 61.6vh;
+    row-gap: 13.9vh;
+    justify-content: center;
+    align-content: center;
+}

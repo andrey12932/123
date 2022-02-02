@@ -1,0 +1,33 @@
+.about {
+    display: grid;
+    background-color: #f5f5f5;
+    justify-content: center;
+    height: 570px;
+}
+
+.about-container {
+    display: grid;
+    max-width: 1366px;
+    grid-template-columns: repeat(2, 683px);
+}
+
+.about-text {
+    display: grid;
+    grid-template-rows: 25px repeat(2, auto);
+    padding-left: 85px;
+    max-width: 435px;
+    min-height: 300px;
+    align-content: space-around;
+    align-self: center;
+}
+
+.about-text__title {
+    font-family: 'MontserratMedium';
+    font-size: 30px;
+}
+
+.about-text__main {
+    font-family: 'NuritoSansRegular';
+    font-size: 16px;
+    line-height: 24px;
+}

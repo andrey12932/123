@@ -1,0 +1,18 @@
+@import url(contact-main.css);
+@import url(contact-text.css);
+
+.contact {
+    background-image: url(../../img/contact/bg.png);
+    display: grid;
+    grid-template-rows: 17.6vh 66.7vh;
+    row-gap: 12vh;
+    justify-content: center;
+    align-content: center;
+    height: 129.6vh;
+}
+
+@media (max-width: 1000px) {
+    .contact {
+        row-gap: 19vh;
+    }
+}

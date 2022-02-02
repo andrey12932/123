@@ -1,0 +1,10 @@
+@import url(team-header.css);
+@import url(team-main.css);
+
+.team {
+    display: grid;
+    grid-template-rows: 16.7vh auto;
+    row-gap: 13vh;
+    height: 103.2vh;
+    padding-top: 21.3vh;
+}

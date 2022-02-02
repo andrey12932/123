@@ -1,0 +1,50 @@
+@import url(blog-item.css);
+
+.blog {
+    background-image: url(../../img/blog/bg.png);
+    background-size: cover;
+    display: grid;
+    grid-template-rows: 11.1vh 37vh;
+    grid-template-columns: 61.2vw;
+    row-gap: 11.1vh;
+    justify-content: center;
+    align-content: center;
+    height: 94.4vh;
+}
+
+.blog-header {
+    display: grid;
+    grid-template-columns: 26vw 7vw;
+    justify-content: space-between;
+}
+
+.blog-header-title {
+    display: grid;
+    grid-template-rows: 1.9vh 5.1vh;
+    row-gap: 4.2vh;
+}
+
+.blog-header-title__title {
+    font-family: 'OverpassExtraBold';
+    color: #c858e8;
+}
+
+.blog-header-title__subtitle {
+    font-size: 4.6vh;
+    font-family: 'OverpassExtraBold';
+}
+
+.blog-header__link {
+    font-family: 'OverpassExtraBold';
+    align-self: flex-end;
+    justify-self: center;
+    text-decoration: none;
+    color: black;
+    border-bottom: #c858e8 1px solid;
+}
+
+.blog-main {
+    display: grid;
+    grid-template-columns: repeat(3, 19.3vw);
+    column-gap: 1.6vw;
+}

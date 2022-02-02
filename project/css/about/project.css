@@ -1,0 +1,35 @@
+.project {
+    display: grid;
+    justify-content: center;
+    height: 400px;
+    text-align: center;
+    font-family: 'MontserratMedium';
+}
+
+.project-container {
+    display: grid;
+    max-width: 545px;
+    grid-template-rows: 23px auto 55px;
+    row-gap: 37px;
+    align-content: center;
+    justify-content: center;
+}
+
+.project__title {
+    font-size: 30px;
+}
+
+.project__text {
+    font-size: 16px;
+    line-height: 24px;
+    color: #8a8a8a;
+}
+
+.project__button {
+    background-color: rgb(16, 201, 195);
+    width: 180px;
+    height: 54px;
+    color: white;
+    border: none;
+    justify-self: center;
+}

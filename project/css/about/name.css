@@ -1,0 +1,30 @@
+.name {
+    background-color: #3e3e3e;
+    display: grid;
+    text-align: center;
+    height: 350px;
+    color: white;
+    justify-content: center;
+}
+
+.name-container {
+    display: grid;
+    max-width: 540px;
+    grid-template-rows: 35px 50px;
+    row-gap: 33px;
+    align-content: center;
+    align-self: center;
+    justify-content: center;
+}
+
+.name__title {
+    font-family: 'MontserratMedium';
+    font-size: 38px;
+}
+
+.name__subtitle {
+    font-family: 'NuritoSansRegular';
+    font-size: 18px;
+    line-height: 28px;
+    color: #989898;
+}
