@@ -6,3 +6,10 @@
 body {
     margin: 0;
 }
+
+
+.body-container {
+    justify-content: center;
+    justify-self: center;
+    justify-items: center;
+}
