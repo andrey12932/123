@@ -1,9 +1,17 @@
+html{
+    display: grid;
+}
+
 header {
     display: grid;
     grid-template-columns: repeat(3, auto);
     height: 100px;
     background-color: white;
     position: sticky;
+}
+
+.header__img {
+    cursor: pointer;
 }
 
 .header-container {
@@ -13,7 +21,7 @@ header {
     max-width: 1366px;
     grid-template-columns: 35px 226px;
     column-gap: 900px;
-    padding-left: 100px;
+    justify-self: center;
 }
 
 .header-menu {
