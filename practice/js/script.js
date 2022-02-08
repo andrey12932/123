@@ -43,4 +43,20 @@ window.onload = function() {
         prevArrow: '<img src="img/keyboard_arrow_up.png">"',
         nextArrow: '<img src="img/keyboard_arrow_down.png">"',
     });
+
+    $(window).scroll(function(){
+        if ($(window).scrollTop() > 200) {
+            $('.head-top').addClass('scroll');
+        }
+        else {
+            $('.head-top').removeClass('scroll')
+        }
+    });
+
+    $('a').on('click', function(){
+        if(this.hash) $(document).data('h',1);
+     });
+     $(document).scroll(function(){
+        if($(this).data('h')) $(this).data('h',0).scrollTop($(this).scrollTop()-130);
+     });
 }

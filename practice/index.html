@@ -12,10 +12,10 @@
     <script src="../practice/js/script.js"></script>
 </head>
 <body class="container">
-    <header class="head-container">
+    <header class="head-container" id="home">
         <div class="head">
             <div class="head-top">
-                <div class="head-top-company">
+                <div class="head-top-company" onclick="document.location.href='#home'" style="cursor: pointer;">
                     <div class="head-top-company__img">
                         <img src="../practice/img/logo.png" alt="log">
                     </div>
@@ -23,11 +23,11 @@
                         DART<br><span>SERVICE MANAGER</span></div>
                     </div>
                 <nav class="head-top-menu">
-                    <div class="head-top-menu__item"><a href="#">Home</a></div>
-                    <div class="head-top-menu__item"><a href="#">Service</a></div>
-                    <div class="head-top-menu__item"><a href="#">Extension</a></div>
-                    <div class="head-top-menu__item"><a href="#">Pricing</a></div>
-                    <div class="head-top-menu__item"><a href="#">Help</a></div>
+                    <div class="head-top-menu__item"><a href="#home">Home</a></div>
+                    <div class="head-top-menu__item"><a href="#service">Service</a></div>
+                    <div class="head-top-menu__item"><a href="#custom">Extension</a></div>
+                    <div class="head-top-menu__item"><a href="#price">Pricing</a></div>
+                    <div class="head-top-menu__item"><a href="#help">Help</a></div>
                 </nav>
                 <div class="head-top__sign-up"><button>sign up</button></div>
             </div>
@@ -101,7 +101,7 @@
             <span class="colors__text">40000+<br>Pro Users</span>
         </div>
     </section>
-    <section class="services">
+    <section class="services" id="service">
         <div class="services-container">
             <div class="services-text">
                 <h2 class="services-text__title">
@@ -170,7 +170,7 @@
             </div>
         </div>
     </section>
-    <section class="customers">
+    <section class="customers" id="custom">
         <div class="customers-container">
             <div class="customers-text">
                 <div class="customers-text__title">
@@ -231,7 +231,7 @@
             </div>
         </div>
     </section>
-    <section class="team">
+    <section class="team" id="price">
         <div class="team-container">
             <span class="team-title">Our Team</span>
             <span class="team-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, illo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, earum!</span>
@@ -256,7 +256,7 @@
             </div>
         </div>
     </section>
-    <section class="contact">
+    <section class="contact" id="help">
         <div class="contact-container">
             <div class="contact__title">
                 Contact Us
@@ -282,7 +282,7 @@
     <section class="footer">
         <div class="footer-container">
             <div class="footer-col1">
-                <div class="footer-col1-company">
+                <div class="footer-col1-company" onclick="document.location.href='#home'" style="cursor: pointer;">
                     <div class="footer-col1-company__img">
                         <img src="../practice/img/logo.png" alt="log">
                     </div>
@@ -300,19 +300,19 @@
             </div>
             <div class="footer-col2">
                 <div class="footer-col2-menu">
-                    <a class="footer-col2-menu__item">
+                    <a class="footer-col2-menu__item" href="#home">
                         Home
                     </a>
-                    <a class="footer-col2-menu__item">
+                    <a class="footer-col2-menu__item" href="#service">
                         Service
                     </a>
-                    <a class="footer-col2-menu__item">
+                    <a class="footer-col2-menu__item" href="#custom">
                         Extension
                     </a>
-                    <a class="footer-col2-menu__item">
+                    <a class="footer-col2-menu__item" href="#price">
                         Pricing
                     </a>
-                    <a class="footer-col2-menu__item">
+                    <a class="footer-col2-menu__item" href="#help">
                         Help
                     </a>
                 </div>

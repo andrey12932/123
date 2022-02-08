@@ -3,12 +3,13 @@
     display: grid;
     grid-template-columns: 20vw 40vw;
     background-color: #f6f6f6;
-    padding-left: 14.5%;
+    padding-left: 8.5%;
     height: 54.4vh;
 }
 
 .slide > img {
     grid-column: 2/3;
+    width: 62.1vw;
 }
 
 .slider-slide-text {
@@ -77,6 +78,7 @@
 
 .buttons-next {
     display: grid;
+    grid-column: 3/4;
     grid-template-columns: repeat(2, auto);
     cursor: pointer;
 }
