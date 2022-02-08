@@ -40,6 +40,18 @@ body {
     
 }
 
+.head__video {
+    border-radius: 7px;
+}
+
+.head-video__video {
+    display:block;
+}
+
+.head-text__video {
+    display: none;
+}
+
 .scroll {
     background-color: #061e37;
     z-index: 100;
