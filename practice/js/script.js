@@ -2,6 +2,7 @@ window.onload = function() {
 
     var elems = document.getElementsByClassName('services-main-item-header');
     var bodies = document.getElementsByClassName('services-main-item-body');
+    var panel = document.getElementsByClassName('navpan')[0];
 
     var body, elem;
 
@@ -44,19 +45,40 @@ window.onload = function() {
         nextArrow: '<img src="img/keyboard_arrow_down.png">"',
     });
 
+    var wasScrolled;
+
     $(window).scroll(function(){
         if ($(window).scrollTop() > 200) {
             $('.head-top').addClass('scroll');
+            wasScrolled = true;
         }
         else {
             $('.head-top').removeClass('scroll')
+            wasScrolled = false;
         }
     });
 
     $('a').on('click', function(){
         if(this.hash) $(document).data('h',1);
-     });
-     $(document).scroll(function(){
-        if($(this).data('h')) $(this).data('h',0).scrollTop($(this).scrollTop()-130);
-     });
+    });
+    $(document).scroll(function(){
+        if($(this).data('h'))
+            $(this).data('h',0).scrollTop($(this).scrollTop()-130);
+    });
+
+    $('.head-top-adapt__menu').on('click', function() {
+        var head = document.getElementsByClassName('head-top')[0];
+        panel.classList.toggle('hidden');
+        if (!head.classList.contains('scroll')){
+            head.classList.toggle('scroll');
+        } else {
+            if (!wasScrolled) {
+                head.classList.toggle('scroll');
+            }
+        }
+    });
+
+    $('.navpan__item').on('click', function() {
+        panel.classList.toggle('hidden');
+    });
 }
