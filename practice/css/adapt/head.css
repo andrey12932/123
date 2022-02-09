@@ -34,7 +34,7 @@
     }
 
     .head {
-        grid-template-rows: 35px 40px auto 1000px auto;
+        grid-template-rows: 35px 40px 200px 1000px auto;
     }
 
     .head-main {

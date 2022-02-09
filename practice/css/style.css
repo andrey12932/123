@@ -9,6 +9,7 @@
 @import url(fontawesome-free-5.15.4-web/css/fontawesome.min.css);
 @import url(fontawesome-free-5.15.4-web/css/all.min.css);
 @import url(adapt/head.css);
+@import url(adapt/start.css);
 
 body {
     min-width: 1440px;
