@@ -14,6 +14,7 @@
 @import url(adapt/services.css);
 @import url(adapt/customers.css);
 @import url(adapt/team.css);
+@import url(adapt/contact.css);
 
 body {
     min-width: 1440px;
