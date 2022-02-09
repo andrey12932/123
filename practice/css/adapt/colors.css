@@ -1,0 +1,30 @@
+@media (max-width:1000px) {
+    .colors {
+        height: 200px;
+        font-size: 30px;
+    }
+
+    .colors__circle {
+        width: 100px;
+        height: 100px;
+    }
+
+    .colors__circle > img {
+        height: 50px;
+    }
+
+    .colors__img1 {
+        left: 24px;
+        top: 23px;
+    }
+
+    .colors__img2, .colors__img4 {
+        left: 29px;
+        top: 24px;
+    }
+
+    .colors__img3 {
+        left: 25px;
+        top: 24px;
+    }
+}

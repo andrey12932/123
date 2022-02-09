@@ -71,9 +71,6 @@
         justify-content: center;
     }
 
-    .head-buttons__button {
-        /*margin-top: 70px;*/
-    }
     .head-buttons__button1 > button{
         font-size: 40px;
         width: 300px;

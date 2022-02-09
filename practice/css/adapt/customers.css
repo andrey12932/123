@@ -1,0 +1,36 @@
+@media (max-width: 1000px) {
+    .customers {
+        height: 1200px;
+    }
+
+    .customers-container {
+        grid-template-columns: auto;
+        grid-template-rows: repeat(2, auto);
+        justify-content: center;
+    }
+
+    .customers-text {
+        max-width: 700px;
+    }
+
+    .customers-text__title > h3{
+        font-size: 60px;
+    }
+
+    .customers-text__subtitle {
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .customers-text__button {
+        display: none;
+    }
+
+    .customers-comments-block-text > h4 {
+        font-size: 38px;
+    }
+
+    .customers-comments-block-text > span {
+        font-size: 25px;
+    }
+}
