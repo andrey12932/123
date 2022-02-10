@@ -1,0 +1,79 @@
+header {
+    z-index: 100;
+    width: 100%;
+    position: fixed;
+    display: grid;
+    background-color: #00CCA6;
+    justify-content: center;
+    align-content: center;
+    height: 95px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.2px;
+    color: white;
+    grid-template-columns: 75%;
+}
+
+.header-content {
+    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 40% 20% 25%;
+}
+
+.header-content-left {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    align-content: center;
+}
+
+.header-content-left__logo {
+    cursor: pointer;
+}
+
+.header-content-left__phone {
+    align-self: center;
+}
+
+.header-content-left__text {
+    align-self: center;
+    cursor: pointer;
+}
+
+.header-content-mid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+}
+
+.header-contene-mid__left {
+    align-self: center;
+    cursor: pointer;
+}
+
+.header-contene-mid__right {
+    align-self: center;
+    cursor: pointer;
+}
+
+.header-content-right {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+}
+
+.header-content-right__entry {
+    align-self: center;
+    cursor: pointer;
+}
+
+.header-content-right__button {
+    font-weight: bold;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    border: 0;
+    cursor: pointer;
+    background: #FFFFFF;
+    border-radius: 5px;
+    width: 178px;
+    height: 52px;
+}

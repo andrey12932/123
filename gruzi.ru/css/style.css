@@ -1,0 +1,12 @@
+@import url(header/header.css);
+@import url(top.css);
+@import url(fonts.css);
+@import url(blocks.css);
+@import url(main/main.css);
+@import url(footer.css);
+@import url(rights.css);
+
+body {
+    display: grid;
+    margin: 0;
+}

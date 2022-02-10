@@ -1,0 +1,47 @@
+.top {
+    display: grid;
+    align-content: center;
+    height: 842px;
+    width: 100%;
+    color: white;
+    background: linear-gradient(90deg, #000000 27.84%, rgba(0, 0, 0, 0) 73.8%), url(../img/pic11.bmp) 0% -200px/ 1920px 1200px no-repeat;
+}
+
+@media (max-width: 1500px) {
+    .top {
+        background: linear-gradient(90deg, #000000 27.84%, rgba(0, 0, 0, 0) 73.8%), url(../img/pic11.bmp) -200px -200px/ 1920px 1200px no-repeat;
+    }
+}
+
+@media (max-width: 1200px) {
+    .top {
+        background: linear-gradient(90deg, #000000 27.84%, rgba(0, 0, 0, 0) 73.8%), url(../img/pic11.bmp) -400px -200px/ 1920px 1200px no-repeat;
+    }
+}
+
+@media (max-width: 900px) {
+    .top {
+        background: linear-gradient(90deg, #000000 27.84%, rgba(0, 0, 0, 0) 73.8%), url(../img/pic11.bmp) -700px -200px/ 1920px 1200px no-repeat;
+    }
+}
+
+.top-text {
+    max-width: 591px;
+    padding-left: 13%;
+    width: 41%;
+}
+
+.top-text__title {
+    font-size: 58px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+}
+
+.top-text__title > b {
+    color: #00CCA6;
+}
+
+.top-text__subtitle {
+    font-family: 'Montserrat';
+    font-size: 34px;
+}

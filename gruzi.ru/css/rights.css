@@ -1,0 +1,27 @@
+.rights {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 500px 100px;
+    margin-top: 65px;
+    column-gap: 27%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background: #FAFAFA;
+    justify-content: center;
+}
+
+.rights__text {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #737373;
+}
+
+.rights-icons {
+    display: grid;
+    grid-template-columns: repeat(3, 23px);
+    justify-content: space-between;
+}
