@@ -15,7 +15,6 @@ header {
     display: grid;
     max-width: 1366px;
     column-gap: 900px;
-    padding-left: 100px;
     justify-content: center;
 }
 

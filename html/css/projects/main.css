@@ -24,6 +24,8 @@
     .slide > img {
         grid-column: span 2;
         grid-row: 1/2;
+        width: 600px;
+        height: 383px;
     }
 
     .slider-slide-text {
@@ -137,7 +139,7 @@
 .slider-slide-text__button {
     border: none;
     background-color: #319BDE;
-    font-size: 2vh;
+    font-size: 30px;
     color: white;
     font-family: 'MontserratMedium';
     justify-self: center;
@@ -148,7 +150,7 @@
 }
 
 .slide > img {
-    height: 52.8vh;
+    height: 574px;
     align-self: center;
     border-radius: 7px;
     border: solid 2px #919191;
