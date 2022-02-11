@@ -1,7 +1,7 @@
 .rights {
     width: 100%;
     display: grid;
-    grid-template-columns: 500px 100px;
+    grid-template-columns: 35% 7%;
     margin-top: 65px;
     column-gap: 27%;
     padding-top: 25px;
@@ -22,6 +22,6 @@
 
 .rights-icons {
     display: grid;
-    grid-template-columns: repeat(3, 23px);
+    grid-template-columns: repeat(3, 22%);
     justify-content: space-between;
 }

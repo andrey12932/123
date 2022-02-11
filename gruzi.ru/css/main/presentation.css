@@ -3,7 +3,7 @@
     margin-bottom: 405px;
     background-color: #252B42;
     display: grid;
-    grid-template-columns: 30% 244px;
+    grid-template-columns: 30% 17%;
     column-gap: 10%;
     grid-template-rows: 60px auto auto;
     justify-content: center;

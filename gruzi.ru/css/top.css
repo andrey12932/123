@@ -7,6 +7,10 @@
     background: linear-gradient(90deg, #000000 27.84%, rgba(0, 0, 0, 0) 73.8%), url(../img/pic11.bmp) 0% -200px/ 1920px 1200px no-repeat fixed;
 }
 
+.top-text__button {
+    display: none;
+}
+
 @media (max-width: 1500px) {
     .top {
         background: linear-gradient(90deg, #000000 27.84%, rgba(0, 0, 0, 0) 73.8%), url(../img/pic11.bmp) -200px -200px/ 1920px 1200px no-repeat;
@@ -22,6 +26,14 @@
 @media (max-width: 900px) {
     .top {
         background: linear-gradient(90deg, #000000 27.84%, rgba(0, 0, 0, 0) 73.8%), url(../img/pic11.bmp) -700px -200px/ 1920px 1200px no-repeat;
+    }
+
+    .top-text__title {
+        font-size: 26px !important;
+    }
+
+    .top-text__subtitle {
+        display: none;
     }
 }
 

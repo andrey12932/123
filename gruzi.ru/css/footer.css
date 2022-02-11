@@ -1,9 +1,10 @@
 footer {
     padding-top: 50px;
-    padding-left: 166px;
+    padding-left: 11%;
+    justify-content: center;
     display: grid;
-    grid-template-columns: repeat(2, 253px) auto;
-    column-gap: 58px;
+    grid-template-columns: repeat(2, 18%) auto;
+    column-gap: 5%;
 }
 
 .footer-col:nth-child(2) {

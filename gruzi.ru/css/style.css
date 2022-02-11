@@ -6,6 +6,9 @@
 @import url(footer.css);
 @import url(rights.css);
 @import url(header/header-adapt.css);
+@import url(top-adapt.css);
+@import url(blocks-adapt.css);
+@import url(main/orders-adapt.css);
 
 body {
     display: grid;
