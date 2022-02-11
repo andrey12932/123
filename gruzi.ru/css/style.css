@@ -5,8 +5,21 @@
 @import url(main/main.css);
 @import url(footer.css);
 @import url(rights.css);
+@import url(header/header-adapt.css);
 
 body {
     display: grid;
     margin: 0;
+}
+
+.element-animation {
+    margin: 2rem 0;
+    
+    opacity: 0;
+    transform: translateY(40%);
+}
+.element-animation.element-show {
+    opacity: 1;
+    transition: all 1s;
+    transform: translateY(0%);
 }

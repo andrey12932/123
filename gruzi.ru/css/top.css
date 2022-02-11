@@ -4,7 +4,7 @@
     height: 842px;
     width: 100%;
     color: white;
-    background: linear-gradient(90deg, #000000 27.84%, rgba(0, 0, 0, 0) 73.8%), url(../img/pic11.bmp) 0% -200px/ 1920px 1200px no-repeat;
+    background: linear-gradient(90deg, #000000 27.84%, rgba(0, 0, 0, 0) 73.8%), url(../img/pic11.bmp) 0% -200px/ 1920px 1200px no-repeat fixed;
 }
 
 @media (max-width: 1500px) {
