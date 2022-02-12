@@ -8,9 +8,6 @@
     padding-bottom: 25px;
     background: #FAFAFA;
     justify-content: center;
-}
-
-.rights__text {
     font-family: Montserrat;
     font-style: normal;
     font-weight: 600;
@@ -20,8 +17,13 @@
     color: #737373;
 }
 
+
 .rights-icons {
     display: grid;
     grid-template-columns: repeat(3, 22%);
     justify-content: space-between;
+}
+
+.rights__text-adapt {
+    display: none;
 }

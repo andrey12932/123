@@ -1,0 +1,16 @@
+@media (max-width: 900px) {
+    .connection {
+        max-width: 375px;
+        grid-template-columns: auto;
+        grid-column: 1/2;
+    }
+
+    .connection-cov {
+        display: none;
+    }
+
+    .connection-form {
+        width: 80%;
+        justify-self: center;
+    }
+}

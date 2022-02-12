@@ -9,6 +9,12 @@
 @import url(top-adapt.css);
 @import url(blocks-adapt.css);
 @import url(main/orders-adapt.css);
+@import url(main/table-adapt.css);
+@import url(main/conditions-adapt.css);
+@import url(main/presentation-adapt.css);
+@import url(main/connection-adapt.css);
+@import url(footer-adapt.css);
+@import url(rigths-adapt.css);
 
 body {
     display: grid;

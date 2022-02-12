@@ -48,3 +48,7 @@
     font-size: 24px;
     line-height: 20px;
 }
+
+.table__button {
+    display: none;
+}

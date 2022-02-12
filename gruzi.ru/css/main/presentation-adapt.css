@@ -1,0 +1,25 @@
+@media (max-width: 900px) {
+    .presentation {
+        padding-top: 40px;
+        grid-template-columns: 85%;
+        grid-template-rows: repeat(3, auto);
+        margin-bottom: 590px;
+    }
+
+    .presentation__download {
+        margin-top: 10px;
+        grid-row: 3/4;
+        justify-self: center;
+        height: 52px;
+        width: 75%;
+    }
+
+    .presentation__title {
+        text-align: center;
+    }
+
+    .presentation__text {
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
