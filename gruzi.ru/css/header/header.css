@@ -86,6 +86,9 @@ header {
     height: 52px;
 }
 
+.header-content__order {
+    display: none;
+}
 
 @media (max-width: 1500px) {
     .header-content {
