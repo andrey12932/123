@@ -12,6 +12,10 @@
     opacity: 1;
 }
 
+.slider-button{
+    font-size: 15px;
+}
+
 .hidden {
     opacity: 0 !important;
 }
@@ -151,14 +155,34 @@
     color: #919191;
 }
 
+.body-container {
+    height: 100vh;
+}
+
+.slider-button {
+    align-content: center;
+}
+
+.slider-button > i::before {
+    align-self: center;
+}
+
+.slider-button > i{
+    display: grid !important;
+    font-size: 30px !important;
+}
+
+.slider-button > span {
+    align-content: center;
+}
+
 .buttons {
     display: grid;
-    grid-template-columns: 170px 20px 140px;
+    grid-template-columns: 200px 20px 170px;
     height: 9.3vh;
     justify-content: space-around;
     align-content: center;
     font-family: 'MontserratMedium';
-    font-size: 1.1vh;
 }
 
 .buttons-prev {
