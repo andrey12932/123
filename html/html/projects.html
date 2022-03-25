@@ -18,58 +18,90 @@
         <header class="header">
             <div class="header-container">
                 <span class="header__text">PORTFOLIO</span>
+                <button class="slider-slide-text__button" style="width: 200px;" id="changeButton">Slider / grid</button>
             </div>
         </header>
         <main>
-            <div class="slider">
-                
-                <div class="slider-slide">
-                    <div class="slide">
-                        <div class="slider-slide-text">
-                            <button onclick="document.location='../../gruzi.ru/html/index.html'" class="slider-slide-text__button">Link Here</button>
-                        </div>
-                        <img src="../img/pic3.png" alt="123">
+            <div class="slider-container">
+                <div class="buttons">
+                    <div class="buttons-prev">
+                        <i class="pe-7s-angle-left"></i>
+                        <span class="buttons-prev__text">PREVIOUS PROJECT</span>
+                    </div>
+                    <div class="buttons-next">
+                        <div class="buttons-next__text">NEXT PROJECT</div>
+                        <i class="pe-7s-angle-right"></i>
                     </div>
                 </div>
-                <div class="slider-slide">
-                    <div class="slide">
-                        <div class="slider-slide-text">
-                            <button onclick="document.location='../../practice/index.html'" class="slider-slide-text__button">Link Here</button>
+                <div class="slider">
+                    <div class="slider-slide">
+                        <div class="slide">
+                            <div class="slider-slide-text">
+                                <button onclick="document.location='../../gruzi.ru/html/index.html'" class="slider-slide-text__button">Link Here</button>
+                            </div>
+                            <img src="../img/pic3.png" alt="123">
                         </div>
-                        <img src="../img/pic3.png" alt="123">
                     </div>
-                </div>
-                <div class="slider-slide">
-                    <div class="slide">
-                        <div class="slider-slide-text">
-                            <button onclick="document.location='../../project/index.html'" class="slider-slide-text__button">Link Here</button>
+                    <div class="slider-slide">
+                        <div class="slide">
+                            <div class="slider-slide-text">
+                                <button onclick="document.location='../../practice/index.html'" class="slider-slide-text__button">Link Here</button>
+                            </div>
+                            <img src="../img/pic3.png" alt="123">
                         </div>
-                        <img src="../img/pic2.bmp" alt="123">
                     </div>
-                </div>
-                <div class="slider-slide">
-                    <div class="slide">
-                        <div class="slider-slide-text">
-                            <button onclick="document.location='../../project1/index.html'" class="slider-slide-text__button">Link Here</button>
+                    <div class="slider-slide">
+                        <div class="slide">
+                            <div class="slider-slide-text">
+                                <button onclick="document.location='../../project/index.html'" class="slider-slide-text__button">Link Here</button>
+                            </div>
+                            <img src="../img/pic2.bmp" alt="123">
                         </div>
-                        <img src="../img/pic1.png" alt="123">
+                    </div>
+                    <div class="slider-slide">
+                        <div class="slide">
+                            <div class="slider-slide-text">
+                                <button onclick="document.location='../../project1/index.html'" class="slider-slide-text__button">Link Here</button>
+                            </div>
+                            <img src="../img/pic1.png" alt="123">
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="buttons">
-                <div class="buttons-prev">
-                    <i class="pe-7s-angle-left"></i>
-                    <span class="buttons-prev__text">PREVIOUS PROJECT</span>
+            <div class="grid-temp hidden">
+                <div class="block">
+                    <img onclick="document.location='../../gruzi.ru/html/index.html'" src="../img/pic3.png" alt="123">
                 </div>
-                <div class="buttons-next">
-                    <div class="buttons-next__text">NEXT PROJECT</div>
-                    <i class="pe-7s-angle-right"></i>
+                <div class="block">
+                    <img onclick="document.location='../../gruzi.ru/html/index.html'" src="../img/pic3.png" alt="123">
+                </div>
+                <div class="block">
+                    <img onclick="document.location='../../gruzi.ru/html/index.html'" src="../img/pic2.bmp" alt="123">
+                </div>
+                <div class="block">
+                    <img onclick="document.location='../../gruzi.ru/html/index.html'" src="../img/pic1.png" alt="123">
                 </div>
             </div>
         </main>
         <footer class="footer">
             
         </footer>
+        <script>
+            const timeout = 300;
+            document.getElementById('changeButton').onclick = () => {
+                let elem1 = document.getElementsByClassName('slider-container')[0];
+                let elem2 = document.getElementsByClassName('grid-temp')[0];
+                let elemToHide = elem1.classList.contains('hidden') ? elem2 : elem1;
+                let elemToShow = elem1.classList.contains('hidden') ? elem1 : elem2;
+                elemToHide.classList.toggle('hidden');
+                setTimeout(() => {
+                    elemToHide.style.display='none';
+                    let style = elemToShow === elem1 ? 'block' : 'grid';
+                    elemToShow.style.display=style;
+                    elemToShow.classList.toggle('hidden');
+                }, timeout);
+            };
+        </script>
     </div>
     <script src="../slider/slick-1.8.1/slick/slick.min.js"></script>
 </body>
