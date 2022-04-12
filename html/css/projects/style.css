@@ -12,3 +12,19 @@ body {
 main {
     height: 80vh;
 }
+
+img {
+    height: 100% !important;
+    object-fit: cover;
+    cursor: pointer;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    transition: all 0.3s;
+}
+
+img:hover {
+    -webkit-box-shadow: 2px 4px 12px 10px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 2px 4px 12px 10px rgba(34, 60, 80, 0.2);
+    box-shadow: 2px 4px 12px 10px rgba(34, 60, 80, 0.2);
+}
