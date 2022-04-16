@@ -1,0 +1,24 @@
+<svg
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   viewBox="0 0 21 21"
+   height="21"
+   width="21">
+  <g
+     transform="translate(0,-1031.3622)">
+    <rect
+       transform="matrix(0.70710679,0.70710677,-0.70710679,0.70710677,0,0)"
+       y="728.78265"
+       x="729.78375"
+       height="1.0010573"
+       width="28.697428"
+       style="fill:#fff;fill-opacity:1;stroke:none;stroke-width:1.70000005;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none" />
+    <rect
+       transform="matrix(-0.70748029,0.70673307,-0.70748029,-0.70673307,0,0)"
+       y="-745.02618"
+       x="715.34332"
+       height="1.0005288"
+       width="28.682278"
+       style="fill:#fff;fill-opacity:1;stroke:none;stroke-width:1.70000005;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none" />
+  </g>
+</svg>
