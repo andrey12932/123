@@ -20,6 +20,10 @@ a {
     position: relative;
 }
 
+header a {
+    font-size: 1.8rem;
+}
+
 a:hover {
     color: #b83539;
 }
@@ -31,7 +35,6 @@ a:hover {
     grid-template-columns: repeat(3, auto);
     justify-content: start;
     column-gap: 5px;
-    width: 100%;
 }
 
 .header__item-icon-two {
@@ -41,7 +44,6 @@ a:hover {
     grid-template-columns: auto auto;
     justify-content: end;
     column-gap: 5px;
-    width: 100%;
 }
 
 .line {
@@ -51,25 +53,36 @@ a:hover {
 }
 
 header {
-    min-height: 120px;
     background-color: #ffdd00;
     display: grid;
+}
+
+.header-container {
+    min-height: 109px;
+    display: grid;
     grid-auto-flow: row;
-    grid-template-rows: 69px auto;
+    grid-template-rows: 40px auto;
+    width: 1640px;
+    justify-self: center;
 }
 
 .header-top {
-    width: 95%;
+    width: 100%;
     display: grid;
     grid-auto-flow: column;
     justify-content: space-between;
-    grid-template-columns: 60% 21%;
     font-size: 1.6rem;
     justify-self: center;
 }
 
 .header-top-right {
     justify-items: end;
+    column-gap: 20px;
+}
+
+.header-top-right > div{
+    justify-items: end;
+    margin: 0;
 }
 
 .header-bottom {
@@ -79,7 +92,7 @@ header {
     font-size: 1.8rem;
     grid-template-columns: 10% 80%;
     justify-content: space-between;
-    width: 95%;
+    width: 100%;
     justify-self: center;
     margin: 10px 0;
 }
@@ -97,6 +110,11 @@ header {
 
 .header__item {
     align-items: center;
+    margin-right: 20px;
+}
+
+.col-2 {
+    grid-template-columns: repeat(2, auto);
 }
 
 .red, .always-red {
@@ -118,21 +136,18 @@ path {
 }
 
 .bg-red {
-    padding: 10px;
     background: #d93f37;
     border: 1px solid #d93f37;
     color: white;
 }
 
 .bg-blue {
-    color: white;
-    padding: 10px;    
+    color: white; 
     background: #30197f;
     border: 1px solid #30197f;
 }
 
 .bg-red:hover {
-    padding: 10px;
     background: none;
     border: 1px solid #d93f37;
     color: #d93f37;
@@ -141,10 +156,14 @@ path {
 .bg-blue:hover {
     background: #439ffe;
     color: white;
-    padding: 10px;
     border: 1px solid #439ffe;
 }
 
+.header-btn {
+    padding: 8px 16px 10px;
+    border-radius: 2px;
+    font-size: 1.8rem;
+}
 
 #burger-menu {
     cursor: pointer;
@@ -264,6 +283,12 @@ path {
     margin-left: 5px;
 }
 
+#menu li > span {
+    font-size: 1.4rem;
+    margin-left: 20px;
+    color: #777;
+}
+
 #menu li {
     padding: 10px 0;
     border-bottom: 1px solid #e5e5e5;
@@ -333,4 +358,16 @@ path {
     .mob-menu {
         grid-template-columns: repeat(3, auto);
     }
+
+    
+}
+
+@media screen and (max-width: 1640px) {
+    .header-container {
+        width: 90%;
+    }
+}
+
+i {
+    transition: 0.3s;
 }

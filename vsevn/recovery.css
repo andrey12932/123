@@ -1,0 +1,139 @@
+.recovery__text {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    grid-column: 1 / -1;
+}
+
+input[type="text" i] {
+    padding: 1px 2px;
+}
+
+.header-container {
+    grid-column: 2/3;
+}
+
+.header-bottom-right.header__block {
+    column-gap: 5px;
+}
+
+
+strong {
+    font-weight: bold;
+}
+
+.recovery__form input {
+    box-sizing: border-box;
+    outline: none;
+    padding: 0 .5rem;
+    height: 45px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #2e3e55;
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.recovery__login-btn {
+    color: #d7212f;
+}
+
+.recovery__error {
+    color: #d7212f;
+    grid-column: 1 / -1;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+
+.recovery__form button {
+    width: 100%;
+    height: 45px;
+    border-radius: 5px;
+    background-color: #d7212f;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    transition: all 200ms ease;
+}
+
+.recovery__title {
+    font-size: 1.5rem;
+}
+
+.header_recovery {
+    display: grid;
+    min-height: initial;
+}
+
+.d-none {
+    display: none !important;
+}
+
+.recovery__succes {
+    max-width: 620px;
+}
+
+.recovery__wrapper {
+    padding: 0 15px;
+}
+
+.recovery__form {
+    display: grid;
+    grid-gap: 1rem;
+    max-width: 620px;
+}
+
+.recovery {
+    grid-column: 2/3;
+}
+
+@media screen and (min-width: 480px){
+    .recovery__title {
+        font-size: 2rem;
+    }
+}
+@media screen and (min-width: 640px) {
+    .recovery__title {
+        font-size: 4rem;
+    }
+
+    .recovery__form {
+        grid-template-columns: 3fr 2fr;
+    }
+
+    .recovery__text {
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (min-width: 960px){
+.recovery {
+    align-items: center;
+    display: grid;
+    background-image: url(./assets/bg_rec.svg);
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: 40%;
+    min-width: 960px;
+    max-width: 1640px;
+}
+
+.header_recovery {
+    min-height: 500px;
+    grid-auto-flow: row;
+    grid-template-columns: 1fr minmax(auto, 1640px) 1fr;
+    grid-template-rows: 140px 640px;
+}
+}
+
+@media screen and (max-width: 1024px){
+header {
+    min-height: 0;
+    grid-template-rows: auto auto;
+    height: unset;
+}}

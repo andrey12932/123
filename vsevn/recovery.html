@@ -7,9 +7,11 @@
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./popup.css">
+    <link rel="stylesheet" href="./recovery.css">
 </head>
 <body>
-    <header class="header"> 
+    
+    <header class="header header_recovery"> 
         <div class="header-container">
         <div class="header-top">
             <div class="header-top-left header__block">
@@ -353,7 +355,27 @@
                 </ul>
             </div>
         </div>
-    </div></header>
+    </div>
+    <div class="recovery">
+        <div class="recovery__wrapper">
+          <h1 class="recovery__title">Восстановление пароля</h1>
+          <form class="recovery__form recovery__form_succes">
+            <p class="recovery__text">
+              Забыли пароль? Ничего страшного, укажите
+              e-mail и мы вышлем на него новый пароль:
+            </p>
+            <input placeholder="Введите E-mail" type="text">
+            <button>Отправить</button>
+            <p class="recovery__error"></p>
+          </form>
+          <div class="recovery__succes d-none">
+            <p>Ссылка для восстановления пароля отправлена на почту<strong><span id="recovery-email"></span></strong></p>
+            <hr class="hr recovery__hr">
+            <p><a class="sigin-btn recovery__login-btn">Войдите</a>            , если вспомнили пароль</p>
+          </div>
+        </div>
+      </div>
+    </header>
     <svg id="icons">
         <symbol id="arhive" viewBox="0 0 15 11" xmlns="http://www.w3.org/2000/svg">
             <path d="M3.976,5.366a3.833,3.833,0,0,1,1.6-.387H12.36v-1.3a1.757,1.757,0,0,0-.538-1.287,1.756,1.756,0,0,0-1.287-.538H6.1V1.589A1.756,1.756,0,0,0,5.565.3,1.757,1.757,0,0,0,4.278-.236H1.671A1.756,1.756,0,0,0,.383.3,1.756,1.756,0,0,0-.154,1.589V9.411q0,0.033,0,.1t0,0.1l0.041-.049L2.64,6.339A3.8,3.8,0,0,1,3.976,5.366ZM14.938,6.127a1.1,1.1,0,0,0-.493-0.106H5.581a2.827,2.827,0,0,0-1.169.289,2.762,2.762,0,0,0-.982.7L0.693,10.242a0.839,0.839,0,0,0-.253.538,0.362,0.362,0,0,0,.216.35,1.1,1.1,0,0,0,.493.106h8.864a2.829,2.829,0,0,0,1.169-.289,2.762,2.762,0,0,0,.982-0.7L14.9,7.015a0.838,0.838,0,0,0,.252-0.538A0.362,0.362,0,0,0,14.938,6.127Z"></path>
@@ -390,7 +412,7 @@
             <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
           </div>
         </div>
-        <div class="right"><img src="assets/logo-popup.png" alt="" style="height: 42px; width: 132px;"><span class="right__span" style="width: 380px;">
+        <div class="right"><img src="./assets/logo-popup.png" alt="" style="height: 42px; width: 132px;"><span class="right__span" style="width: 380px;">
           Зарегистрируйся, чтобы иметь возможность
         наслаждаться всем функционалом сайта</span>
         <p class="signup">РЕГИСТРАЦИЯ</p>
@@ -439,7 +461,7 @@
             <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
           </div>
         </div>
-        <div class="right"><img src="./assets/logo-popup.png" alt="" style="height: 42px; width: 132px;"><span class="right__span">
+        <div class="right"><img src="assets/logo-popup.png" alt="" style="height: 42px; width: 132px;"><span class="right__span">
             Войди, чтобы иметь возможность
             наслаждаться всем функционалом</span>
           <p class="signup">ВХОД</p>
@@ -462,5 +484,6 @@
 
     <script src="https://kit.fontawesome.com/1549faebd8.js" crossorigin="anonymous"></script>
     <script src="./script.js"></script>
+    <script src="./recovery.js"></script>
 </body>
 </html>
