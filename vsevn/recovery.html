@@ -13,89 +13,101 @@
     
     <header class="header header_recovery"> 
         <div class="header-container">
-        <div class="header-top">
-            <div class="header-top-left header__block">
-                <div class="header__item header__item-icon col-2">
-                    <svg width="15" height="11"><use xlink:href="#arhive"></use></svg>
-                    <a href="" class="header__item">
-                        Архив
-                    </a>
+            <div class="header-top">
+                <div class="header-top-left header__block">
+                    <div class="header__item header__item-icon col-2">
+                        <svg width="15" height="11"><use xlink:href="#arhive"></use></svg>
+                        <a href="" class="header__item">
+                            Архив
+                        </a>
+                    </div>
+                    <div href="" id="notification" class="header__item header__item-icon">
+                        <svg 
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            width="16px" height="18px">
+                            <path fill-rule="evenodd"  fill="rgb(184, 53, 57)" class="always-red"
+                            d="M15.434,15.531 C15.367,15.647 15.243,15.719 15.109,15.719 L0.911,15.719 C0.776,15.719 0.653,15.647 0.587,15.530 C0.520,15.413 0.522,15.269 0.591,15.153 L1.874,13.017 C2.466,12.030 2.779,10.901 2.779,9.752 L2.779,7.880 C2.779,5.516 4.357,3.518 6.515,2.873 L6.515,1.533 C6.515,0.709 7.186,0.039 8.010,0.039 C8.834,0.039 9.504,0.709 9.504,1.533 L9.504,2.873 C11.662,3.518 13.240,5.516 13.240,7.880 L13.240,9.752 C13.240,10.901 13.553,12.031 14.146,13.017 L15.429,15.154 C15.498,15.269 15.500,15.414 15.434,15.531 ZM8.010,17.959 C6.970,17.959 6.078,17.346 5.657,16.466 L10.363,16.466 C9.941,17.346 9.049,17.959 8.010,17.959 Z"/>
+                        </svg>
+                        <a href="">
+                            Уведомления
+                        </a>
+                        <span class="red" style="color: #b83539;">
+                            (1)
+                        </span>
+                    </div>
+                    <div href="" id="messages" class="header__item header__item-icon col-2">
+                        <svg 
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            width="18px" height="12px">
+                            <path fill-rule="evenodd"  fill="rgb(0, 0, 0)"
+                            d="M11.600,6.094 L17.400,1.049 L17.400,11.022 L11.600,6.094 ZM0.981,0.327 C1.198,0.124 1.488,-0.001 1.808,-0.001 L16.192,-0.001 C16.514,-0.001 16.805,0.123 17.020,0.325 L9.000,7.199 L0.981,0.327 ZM0.600,11.022 L0.600,1.053 L6.399,6.094 L0.600,11.022 ZM9.000,8.399 L11.079,6.580 L17.018,11.673 C16.802,11.875 16.512,11.999 16.192,11.999 L1.808,11.999 C1.487,11.999 1.195,11.875 0.979,11.673 L6.922,6.580 L9.000,8.399 Z"/>
+                        </svg>
+                        <a href="">
+                            Сообщения
+                        </a>
+                    </div>
+                    <div href="" id="fav" class="header__item header__item-icon col-2">
+                        <svg 
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            width="16px" height="15px">
+                            <path fill-rule="evenodd"  fill="rgb(0, 0, 0)"
+                            d="M8.347,0.395 L10.215,4.819 L14.997,5.230 C15.329,5.259 15.464,5.673 15.212,5.891 L11.585,9.036 L12.672,13.714 C12.747,14.040 12.395,14.295 12.110,14.122 L8.000,11.642 L3.891,14.122 C3.605,14.294 3.254,14.038 3.329,13.714 L4.416,9.036 L0.788,5.890 C0.536,5.672 0.670,5.258 1.003,5.230 L5.785,4.819 L7.653,0.395 C7.782,0.087 8.217,0.087 8.347,0.395 Z"/>
+                        </svg>
+                        <a href="">
+                            Избранное
+                        </a>
+                    </div>
+                    <div href="" id="fav" class="header__item header__item-icon col-2">
+                        <i class="fa-solid fa-paper-plane"></i>
+                        <a href="">
+                            Подписаться
+                        </a>
+                    </div>
                 </div>
-                <div href="" id="notification" class="header__item header__item-icon">
-                    <svg 
-                        xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink"
-                        width="16px" height="18px">
-                        <path fill-rule="evenodd"  fill="rgb(184, 53, 57)" class="always-red"
-                        d="M15.434,15.531 C15.367,15.647 15.243,15.719 15.109,15.719 L0.911,15.719 C0.776,15.719 0.653,15.647 0.587,15.530 C0.520,15.413 0.522,15.269 0.591,15.153 L1.874,13.017 C2.466,12.030 2.779,10.901 2.779,9.752 L2.779,7.880 C2.779,5.516 4.357,3.518 6.515,2.873 L6.515,1.533 C6.515,0.709 7.186,0.039 8.010,0.039 C8.834,0.039 9.504,0.709 9.504,1.533 L9.504,2.873 C11.662,3.518 13.240,5.516 13.240,7.880 L13.240,9.752 C13.240,10.901 13.553,12.031 14.146,13.017 L15.429,15.154 C15.498,15.269 15.500,15.414 15.434,15.531 ZM8.010,17.959 C6.970,17.959 6.078,17.346 5.657,16.466 L10.363,16.466 C9.941,17.346 9.049,17.959 8.010,17.959 Z"/>
-                    </svg>
-                    <a href="">
-                        Уведомления
-                    </a>
-                    <span class="red" style="color: #b83539;">
-                        (1)
-                    </span>
-                </div>
-                <div href="" id="messages" class="header__item header__item-icon col-2">
-                    <svg 
-                        xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink"
-                        width="18px" height="12px">
-                        <path fill-rule="evenodd"  fill="rgb(0, 0, 0)"
-                        d="M11.600,6.094 L17.400,1.049 L17.400,11.022 L11.600,6.094 ZM0.981,0.327 C1.198,0.124 1.488,-0.001 1.808,-0.001 L16.192,-0.001 C16.514,-0.001 16.805,0.123 17.020,0.325 L9.000,7.199 L0.981,0.327 ZM0.600,11.022 L0.600,1.053 L6.399,6.094 L0.600,11.022 ZM9.000,8.399 L11.079,6.580 L17.018,11.673 C16.802,11.875 16.512,11.999 16.192,11.999 L1.808,11.999 C1.487,11.999 1.195,11.875 0.979,11.673 L6.922,6.580 L9.000,8.399 Z"/>
-                    </svg>
-                    <a href="">
-                        Сообщения
-                    </a>
-                </div>
-                <div href="" id="fav" class="header__item header__item-icon col-2">
-                    <svg 
-                        xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink"
-                        width="16px" height="15px">
-                        <path fill-rule="evenodd"  fill="rgb(0, 0, 0)"
-                        d="M8.347,0.395 L10.215,4.819 L14.997,5.230 C15.329,5.259 15.464,5.673 15.212,5.891 L11.585,9.036 L12.672,13.714 C12.747,14.040 12.395,14.295 12.110,14.122 L8.000,11.642 L3.891,14.122 C3.605,14.294 3.254,14.038 3.329,13.714 L4.416,9.036 L0.788,5.890 C0.536,5.672 0.670,5.258 1.003,5.230 L5.785,4.819 L7.653,0.395 C7.782,0.087 8.217,0.087 8.347,0.395 Z"/>
-                    </svg>
-                    <a href="">
-                        Избранное
-                    </a>
-                </div>
-                <div href="" id="fav" class="header__item header__item-icon col-2">
-                    <i class="fa-solid fa-paper-plane"></i>
-                    <a href="">
-                        Подписаться
-                    </a>
+                <div class="header-top-right header__block">
+                    <div href="" id="reg" class="header__item header__item-icon-two">
+                        <svg class="account__icon" xmlns="http://www.w3.org/2000/svg" width="15" height="13" viewBox="0 0 14.997 14">
+                            <path d="M12.497,6a3.5,3.5,0,0,1-3.5-3.5c0-.1138.0229-.2213.0335-.3323a7.23,7.23,0,0,0-1.5338-.1649A7.6622,7.6622,0,0,0,0,9.82,8.0141,8.0141,0,0,0,1.1683,14h.7684a4.7816,4.7816,0,0,1,3.0741-2.2955,3.4743,3.4743,0,0,0,4.926.0474A4.7173,4.7173,0,0,1,12.87,14h.9557A8.0573,8.0573,0,0,0,13.87,5.719,3.4861,3.4861,0,0,1,12.497,6ZM8.7819,11.4773a2.5421,2.5421,0,0,1-2.6151-.0255A3.5743,3.5743,0,0,1,4.5375,8.3544,3.25,3.25,0,0,1,7.4968,4.8825a3.2505,3.2505,0,0,1,2.9594,3.4719A3.5615,3.5615,0,0,1,8.7819,11.4773Zm3.9659-9.2281V0h-.7516V2.2492H9.7415v.7516h2.2548V5.2556h.7516V3.0008H14.997V2.2492Z"></path>
+                        </svg>
+                        <a href="">
+                            Регистрация
+                        </a>
+                    </div>
+                    <div href="" id="login" class="header__item header__item-icon-two">
+                        <svg 
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            width="15px" height="13px">
+                            <path fill-rule="evenodd"  fill="rgb(44, 44, 44)"
+                            d="M7.500,0.002 C3.359,0.002 0.003,3.502 0.003,7.820 C0.003,9.702 0.641,11.428 1.703,12.777 C1.866,11.409 3.177,10.252 5.014,9.704 C5.685,10.356 6.552,10.752 7.500,10.752 C8.426,10.752 9.275,10.376 9.940,9.752 C11.793,10.348 13.075,11.572 13.117,12.995 C14.286,11.616 14.997,9.805 14.997,7.820 C14.997,3.502 11.640,0.002 7.500,0.002 ZM7.500,9.826 C7.021,9.826 6.570,9.689 6.170,9.451 C5.205,8.879 4.541,7.707 4.541,6.354 C4.541,4.440 5.868,2.882 7.500,2.882 C9.132,2.882 10.459,4.440 10.459,6.354 C10.459,7.728 9.774,8.914 8.785,9.477 C8.396,9.699 7.960,9.826 7.500,9.826 Z"/>
+                        </svg>
+                        <a href="">
+                            Войти
+                        </a>
+                        <div class="reg-block hidden">
+                            <div class="row">
+                                <div class="one"><i class="fa-solid fa-wallet"></i><span id="money">12593 ₽</span></div>
+                                <div class="one"><i class="fa-solid fa-coins"></i><span class="coins">0 ₽</span></div>
+                            </div>
+                            <div class="row">
+                                <i class="fa-solid fa-address-book"></i><span class="sec-row">Оплаченные запросы на автоматическое отображение контактов в резюме 0 раз</span>
+                            </div>
+                            <div class="row">
+                                <i class="fa-solid fa-chart-line"></i><span class="put-up">Услуга "Поднять объявление в поиске" 0 раз</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-logout header__item-icon-two">
+                        <i class="fa-solid fa-power-off"></i>
+                        <a href="">
+                            Выйти
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div class="header-top-right header__block">
-                <div href="" id="reg" class="header__item header__item-icon-two">
-                    <svg class="account__icon" xmlns="http://www.w3.org/2000/svg" width="15" height="13" viewBox="0 0 14.997 14">
-                        <path d="M12.497,6a3.5,3.5,0,0,1-3.5-3.5c0-.1138.0229-.2213.0335-.3323a7.23,7.23,0,0,0-1.5338-.1649A7.6622,7.6622,0,0,0,0,9.82,8.0141,8.0141,0,0,0,1.1683,14h.7684a4.7816,4.7816,0,0,1,3.0741-2.2955,3.4743,3.4743,0,0,0,4.926.0474A4.7173,4.7173,0,0,1,12.87,14h.9557A8.0573,8.0573,0,0,0,13.87,5.719,3.4861,3.4861,0,0,1,12.497,6ZM8.7819,11.4773a2.5421,2.5421,0,0,1-2.6151-.0255A3.5743,3.5743,0,0,1,4.5375,8.3544,3.25,3.25,0,0,1,7.4968,4.8825a3.2505,3.2505,0,0,1,2.9594,3.4719A3.5615,3.5615,0,0,1,8.7819,11.4773Zm3.9659-9.2281V0h-.7516V2.2492H9.7415v.7516h2.2548V5.2556h.7516V3.0008H14.997V2.2492Z"></path>
-                    </svg>
-                    <a href="">
-                        Регистрация
-                    </a>
-                </div>
-                <div href="" id="login" class="header__item header__item-icon-two">
-                    <svg 
-                        xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink"
-                        width="15px" height="13px">
-                        <path fill-rule="evenodd"  fill="rgb(44, 44, 44)"
-                        d="M7.500,0.002 C3.359,0.002 0.003,3.502 0.003,7.820 C0.003,9.702 0.641,11.428 1.703,12.777 C1.866,11.409 3.177,10.252 5.014,9.704 C5.685,10.356 6.552,10.752 7.500,10.752 C8.426,10.752 9.275,10.376 9.940,9.752 C11.793,10.348 13.075,11.572 13.117,12.995 C14.286,11.616 14.997,9.805 14.997,7.820 C14.997,3.502 11.640,0.002 7.500,0.002 ZM7.500,9.826 C7.021,9.826 6.570,9.689 6.170,9.451 C5.205,8.879 4.541,7.707 4.541,6.354 C4.541,4.440 5.868,2.882 7.500,2.882 C9.132,2.882 10.459,4.440 10.459,6.354 C10.459,7.728 9.774,8.914 8.785,9.477 C8.396,9.699 7.960,9.826 7.500,9.826 Z"/>
-                    </svg>
-                    <a href="">
-                        Войти
-                    </a>
-                </div>
-                <div class="header-logout header__item-icon-two">
-                    <i class="fa-solid fa-power-off"></i>
-                    <a href="">
-                        Выйти
-                    </a>
-                </div>
-            </div>
-        </div>
         <div class="header-bottom">
             <img src="./assets/site_logo.png" alt="" class="header-logo">
             <div class="header-bottom-right header__block">
@@ -140,6 +152,11 @@
             
             <div id="menu">
                 <ul>
+                    <li>
+                        <span>
+                            Имя
+                        </span>
+                    </li>
                 <li>
                     <a href="" target="_blank">
                         <svg width="15" height="15" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -408,7 +425,7 @@
                 </div>
               </div>
               <!-- Add Pagination-->
-              <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 1"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 3"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 4"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 5"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 6"></span></div>
+              <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 1"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 4"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 5"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 6"></span></div>
             <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
           </div>
         </div>

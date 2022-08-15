@@ -3,6 +3,11 @@
     src: url(./fonts/Geometria.woff);
 }
 
+@font-face {
+    font-family: 'Geometria-Light';
+    src: url(./fonts/Geometria-Light.woff);
+}
+
 html {
     font-size: 10px;
 }
@@ -53,8 +58,37 @@ a:hover {
 }
 
 header {
-    background-color: #ffdd00;
+    background-color: #fede31;
     display: grid;
+}
+
+
+.reg-block {
+    position: absolute;
+    top: 34px;
+    width: 400px;
+    background-color: #fefef4;
+    z-index: 99;
+    padding: 10px 20px;
+    height: 120px;
+    display: grid;
+}
+
+.reg-block > .row {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+}
+
+.reg-block > .row > * {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    column-gap: 15px;
+    align-items: center;
+    justify-content: start;
+}
+
+.hidden {
+    display: none;
 }
 
 .header-container {
@@ -85,12 +119,20 @@ header {
     margin: 0;
 }
 
+.line {
+    width: 100vw;
+    position: fixed;
+    left: 0;
+    top: 45px;
+    height: 1px;
+}
+
 .header-bottom {
     display: grid;
     grid-auto-flow: column;
     align-items: center;
     font-size: 1.8rem;
-    grid-template-columns: 10% 80%;
+    grid-template-columns: 10% 86.2%;
     justify-content: space-between;
     width: 100%;
     justify-self: center;
@@ -162,13 +204,13 @@ path {
 .header-btn {
     padding: 8px 16px 10px;
     border-radius: 2px;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
 }
 
 #burger-menu {
     cursor: pointer;
-    height: 27px;
-    width: 27px;
+    height: 18px;
+    width: 30px;
     overflow: visible;
     position: relative;
     z-index:2;
@@ -176,9 +218,10 @@ path {
   #burger-menu span,
   #burger-menu span:before,
   #burger-menu span:after {
-    background: #d93f37;
+    background: black;
+    line-height: 1.15;
     display: block;
-    height: 4px;
+    height: 2px;
     opacity: 1;
     position: absolute;
     transition: 0.3s ease-in-out;
@@ -188,18 +231,18 @@ path {
     content: "";
   }
   #burger-menu span {
-    right: 0px;
-    top: 13px;
+    right: 3px;
+    top: calc(50% - 1px);
     width: 27px;
   }
   #burger-menu span:before {
     left: 0px;
-    top: -10px;
+    top: -9px;
     width: 27px;
   }
   #burger-menu span:after {
     left: 0px;
-    top: 10px;
+    bottom: -9px;
     width: 27px;
   }
   
@@ -223,7 +266,7 @@ path {
   
   #menu{
     z-index:1;
-    min-width:155px;
+    width: 400px;
     position: fixed;
     top: 95px;
     right: 0;
@@ -253,7 +296,7 @@ path {
   #menu a{
     color:#000;
     display:block;
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     margin-bottom:30px;
     text-decoration:none;
   }
@@ -284,7 +327,7 @@ path {
 }
 
 #menu li > span {
-    font-size: 1.4rem;
+    font-size: 2rem;
     margin-left: 20px;
     color: #777;
 }

@@ -6,7 +6,7 @@ let err = document.querySelector('.recovery__error');
 sendBtn.addEventListener('click', e => {
     e.preventDefault();
     console.log(validateEmail(input.value));
-    if (validateEmail(input.value)) {
+    if (!validateEmail(input.value)) {
         err.innerText = 'Неправильный адрес электронной почты';
     } else {
         err.innerText = 'Пользователь с указанным E-mail не найден';

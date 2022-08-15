@@ -1,6 +1,6 @@
 .recovery__text {
     margin-bottom: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     grid-column: 1 / -1;
 }
 
@@ -24,7 +24,7 @@ strong {
 .recovery__form input {
     box-sizing: border-box;
     outline: none;
-    padding: 0 .5rem;
+    padding: 0 1.5rem;
     height: 45px;
     width: 100%;
     border: none;
@@ -62,7 +62,7 @@ strong {
 }
 
 .recovery__title {
-    font-size: 1.5rem;
+    font-size: 3.3rem;
 }
 
 .header_recovery {
@@ -80,6 +80,8 @@ strong {
 
 .recovery__wrapper {
     padding: 0 15px;
+    display: grid;
+    justify-self: end;
 }
 
 .recovery__form {
@@ -94,7 +96,7 @@ strong {
 
 @media screen and (min-width: 480px){
     .recovery__title {
-        font-size: 2rem;
+        font-size: 3.7rem;
     }
 }
 @media screen and (min-width: 640px) {
@@ -108,6 +110,7 @@ strong {
 
     .recovery__text {
         margin-bottom: 2rem;
+        font-size: 2rem;
     }
 }
 
@@ -116,7 +119,7 @@ strong {
     align-items: center;
     display: grid;
     background-image: url(./assets/bg_rec.svg);
-    background-position: right center;
+    background-position: left center;
     background-repeat: no-repeat;
     background-size: 40%;
     min-width: 960px;
