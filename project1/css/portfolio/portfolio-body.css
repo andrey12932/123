@@ -1,8 +1,0 @@
-@import url(portfolio-body-block.css);
-
-.portfolio-body {
-    display: grid;
-    grid-template-rows: repeat(3, 44vh);
-    row-gap: 8vh;
-    justify-self: center;
-}

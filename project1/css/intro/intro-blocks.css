@@ -1,7 +1,0 @@
-@import url(intro-blocks-items.css);
-
-.intro-blocks {
-    display: grid;
-    grid-template-columns: repeat(3, 19.3vw);
-    column-gap: 1.6vw;
-}

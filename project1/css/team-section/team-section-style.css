@@ -1,7 +1,0 @@
-@import url(team/team-style.css);
-@import url(qoute/quote-style.css);
-
-.team-section {
-    background-image: url(../../img/team/bg.png);
-    height: 193vh;
-}
